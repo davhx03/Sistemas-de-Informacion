@@ -32,3 +32,17 @@ El **ciclo de vida** de una función comienza con un "evento de activación" (co
 El video también presenta características de orquestación más avanzadas, como el **"reúso de containers"**. Si un nuevo evento llega poco después de una ejecución, Amazon puede reutilizar el container existente para mejorar el rendimiento. Si los eventos llegan de forma **concurrente**, Lambda simplemente inicializa nuevos containers para manejarlos en paralelo.
 
 Se hace una recomendación crítica sobre la **"idempotencia"**: dado que Amazon garantiza la ejecución "al menos una vez" (pero no "exactamente una vez"), las funciones deberían diseñarse para que, si se ejecutan múltiples veces por error, no generen resultados indebidos, como un doble cobro en una transacción.
+
+---
+
+## Práctica
+- Link: https://rm9pu11rz6.execute-api.us-east-2.amazonaws.com/default/Prueba_sisinfo
+Code: 
+import json
+
+def lambda_handler(event, context):
+    # TODO implement
+    return {
+        'statusCode': 200,
+        'body': json.dumps('Prueba Sisinfo :-)')
+    }
