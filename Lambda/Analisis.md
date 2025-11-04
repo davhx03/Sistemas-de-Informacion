@@ -37,12 +37,14 @@ Se hace una recomendación crítica sobre la **"idempotencia"**: dado que Amazon
 
 ## Práctica
 - Link: https://rm9pu11rz6.execute-api.us-east-2.amazonaws.com/default/Prueba_sisinfo
-Code: 
+Code:
+```
 import json
 
 def lambda_handler(event, context):
-    # TODO implement
-    return {
+# TODO implement
+return {
         'statusCode': 200,
         'body': json.dumps('Prueba Sisinfo :-)')
     }
+```
